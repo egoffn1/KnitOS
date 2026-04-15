@@ -1,0 +1,44 @@
+# Board configuration for KnitOS x86_64 emulator
+TARGET_ARCH := x86_64
+TARGET_CPU_ABI := x86_64
+TARGET_CPU_ABI2 := x86
+TARGET_ARCH_VARIANT := x86_64
+TARGET_CPU_VARIANT := generic
+
+# Kernel
+TARGET_NO_KERNEL := true
+BOARD_KERNEL_CMDLINE := bootconfig androidboot.hardware=knitos_x86_64 androidboot.serialno=KNITOS001
+
+# Bootloader
+TARGET_NO_BOOTLOADER := true
+
+# Partitions
+BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 5368709120
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 10737418240
+BOARD_FLASH_BLOCK_SIZE := 4096
+
+# A/B slots
+AB_OTA_UPDATER := true
+AB_OTA_PARTITIONS += \
+    boot \
+    system \
+    vendor \
+    product
+
+# Graphics
+USE_OPENGL_RENDERER := true
+NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
+
+# Hardware
+BOARD_USES_GENERIC_AUDIO := true
+BOARD_USES_GENERIC_SENSORS := true
+
+# SELinux
+BOARD_SEPOLICY_DIRS += device/generic/knitos_x86_64/sepolicy
+
+# Vendor SPL
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
+
+# GSI compatibility
+PRODUCT_FULL_TREBLE_OVERRIDE := true

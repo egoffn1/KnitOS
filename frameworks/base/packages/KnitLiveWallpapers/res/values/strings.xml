@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KnitOS Live Wallpapers</string>
+    
+    <!-- Wallpaper names -->
+    <string name="wallpaper_knitting_pattern">Knitting Pattern</string>
+    <string name="wallpaper_thread_weave">Thread Weave</string>
+    <string name="wallpaper_dynamic_yarn">Dynamic Yarn</string>
+    
+    <!-- Wallpaper descriptions -->
+    <string name="wallpaper_knitting_pattern_desc">Dynamic knitting patterns that respond to system state and time of day</string>
+    <string name="wallpaper_thread_weave_desc">Interwoven threads creating beautiful flowing animations</string>
+    <string name="wallpaper_dynamic_yarn_desc">Colorful yarn strands that dance with your battery level and notifications</string>
+    
+    <!-- Settings -->
+    <string name="settings_speed">Animation Speed</string>
+    <string name="settings_colors">Color Scheme</string>
+    <string name="settings_complexity">Pattern Complexity</string>
+</resources>

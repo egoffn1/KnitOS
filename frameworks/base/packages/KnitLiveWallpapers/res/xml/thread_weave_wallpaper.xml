@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Thread Weave Live Wallpaper Configuration -->
+<wallpaper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:thumbnail="@drawable/ic_thread_weave"
+    android:description="@string/wallpaper_thread_weave_desc"
+    android:settingsActivity="com.knitos.livewallpapers.settings.ThreadWeaveSettingsActivity" />

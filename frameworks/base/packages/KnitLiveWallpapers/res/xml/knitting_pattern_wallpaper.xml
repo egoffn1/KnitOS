@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Knitting Pattern Live Wallpaper Configuration -->
+<wallpaper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:thumbnail="@drawable/ic_knitting_pattern"
+    android:description="@string/wallpaper_knitting_pattern_desc"
+    android:settingsActivity="com.knitos.livewallpapers.settings.KnittingSettingsActivity" />

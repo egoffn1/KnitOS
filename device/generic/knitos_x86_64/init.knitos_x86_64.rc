@@ -1,0 +1,20 @@
+# Init script for KnitOS x86_64 emulator
+
+on init
+    # Set system properties
+    setprop ro.knitos.booting true
+    mkdir /data/knitos 0755 system system
+
+on boot
+    # Start KnitOS services
+    start knit_ota_service
+    
+    # Enable live wallpapers
+    setprop persist.knitos.live_wallpapers 1
+
+service knit_ota_service /system/bin/knit_ota_daemon
+    class main
+    user system
+    group system
+    disabled
+    oneshot
